@@ -25,6 +25,6 @@ where $d_h > d_l$. Our goal is to calculate $g(\rho, \theta, z)$ that lead to $f
 
 ## Optimization framework and software implementation
 
-
+![CAL setup](githubRepo_schematic.png)
 
 
