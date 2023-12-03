@@ -33,6 +33,8 @@ Several possible mathematical optimization approaches could exist to encourage t
 
 We impose an L1 penalty on each of the types of violations and obtain the loss at iteration $t$ as follows:
 
-$$ L_{PM}[t] = \int_{\sim V_2[t]} \left( \frac{N_r\alpha}{\Omega}(T^*_{-\alpha}{g}(\mathbf{r})) - d_h \right) d\mathbf{r} $$ $$ - \int_{\sim V_2[t]} \left( \frac{N_r\alpha}{\Omega}(T^*_{-\alpha}{g}(\mathbf{r})) - d_h \right) d\mathbf{r} $$
+$$ L_{PM}[t] = \int_{\sim V_2[t]} \left( \frac{N_r\alpha}{\Omega}(T^*_{-\alpha}{g}(\mathbf{r})) - d_h \right) d\mathbf{r} $$ 
+
+$$ - \int_{\sim V_2[t]} \left( \frac{N_r\alpha}{\Omega}(T^*_{-\alpha}{g}(\mathbf{r})) - d_h \right) d\mathbf{r} $$
 
 
