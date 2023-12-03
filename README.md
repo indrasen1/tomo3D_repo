@@ -52,5 +52,23 @@ The software implementation is through an optimization class CAL_mp. This uses m
 
 The notebook shows an example for optimizing the projections of a model of the COVID-19 virus. Once the optimization is complete, a graph of loss vs epochs and videos of various quantities of interest are created. The projections are saved as a matlab file ready for driving projector output. 
 
+The example below shows a set of outputs for the 3D printing of a prosthetic arm 'Hollie's hand'. This particular example is shown in the notebook CAL_example.py for two sets of discretizations. Both of these led to perfect convergence (zero loss before iteration counts could be exhausted). 
+
+Please feel free to fork the repository and try it out with your own STL geometries. 
+
+Perfect reconstruction in the imaging problem (even in the case of sparse angular sampling) has been studied, for example:
+E. Candes, J. Romberg, T. Tao, "Robust uncertainty principles: exact signal reconstruction from highly incomplete frequency information"
+The 3D printing problem on the other hand relies on a non-linear thresholding and is positivity constrained in the projection space. On a positive note, target geometries are often sparse and have highly sparse gradients (unlike the imaging problem). It would be interesting to study the parameter space of perfect reconstruction in the 3D printing problem. 
+
 https://github.com/indrasen1/tomo3D_repo/assets/24784107/55c69b2d-0f98-42f2-bc37-05e9142dac71
+
+## Acknowledgments
+
+This work was carried out at UC Berkeley in the lab of Prof. Hayden Taylor. Please consider using this technology with intention towards socially beneficial and conscious projects. The examples used in this notebook: a prosthetic hand and a medical model serve to illustrate some of the ways in which 3D printing can help our society. The models used here are under a creative commons license. 
+
+## Potential further steps
+[1] Incorporate a more detailed forward model using Abbe imaging physics
+[2] Discretization using the cylindrical symmetry of the problem or other non-uniform grids that could be beneficial
+[3] Faster optimization methods or parallelization using a GPU
+[4] Study if allowing for the printing of artifacts in $R_2$ improves the optimization result
 
