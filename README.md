@@ -33,6 +33,6 @@ Several possible mathematical optimization approaches could exist to encourage t
 
 We impose an L1 penalty on each of the types of violations as follows:
 
-$$ \scriptL_{PM}[t] = \int_{\sym V_2[t]} (\frac{N_r\alpha}{\Omega}(T^*_{-\alpha}{g}(\mathbf{r})))d\mathbf{r} $$
+$$ \mathcal{L}_{PM}[t] = \int_{\sim V_2[t]} \left(\frac{N_r\alpha}{\Omega}(T^*_{-\alpha}{g}(\mathbf{r})) - d_h \right)d\mathbf{r} $$
 
 
