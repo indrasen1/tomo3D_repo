@@ -27,4 +27,6 @@ where $d_h > d_l$. Our goal is to calculate $g(\rho, \theta, z)$ that lead to $f
 
 ![CAL setup](githubRepo_schematic.png)
 
+Figure: [A]: the hardware setup for 3D printing using a rotating resin container and projector, [B]: Schematic showing how different anges contribute to dose formation in 3D, [C]: the print target definition. Based on an input geometry, a target region, background and thin buffer region are created, [D]: Region definitions for computing the loss at any given iteration $t$, [E]: Gradient computation for the projector intensity values corresponding to a pixel $[i, j, k]$ in the projection space
+
 
