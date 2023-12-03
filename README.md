@@ -39,7 +39,9 @@ $$ - \int_{\sim V_1[t]} \left( \frac{N_r\alpha}{\Omega}(T^*_{-\alpha}{g}(\mathbf
 
 We would like to obtain $\hat{g}$ that minimizes this loss function. In order to implement a derivative based method to obtain the minimum, we calculate the gradient of this loss function with respect to a particular projector pixels intensity:
 
-$$  = \int_{\sim V_2[t]} \left( \frac{N_r \alpha}{\Omega}(T^{*}_{-\alpha}(\phi_{i,j,k})(\mathbf{r})) \right) d\mathbf{r} $$ 
+$$ \frac{d L_{PM}[t]}{dG_{i,j,k}} $$
+
+$$ = \int_{\sim V_2[t]} \left( \frac{N_r \alpha}{\Omega}(T^{*}_{-\alpha}(\phi_{i,j,k})(\mathbf{r})) \right) d\mathbf{r} $$ 
 
 $$ - \int_{\sim V_1[t]} \left( \frac{N_r \alpha}{\Omega}(T^{*}_{-\alpha}(\phi_{i,j,k})(\mathbf{r})) \right) d\mathbf{r} $$
 
