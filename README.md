@@ -43,7 +43,7 @@ $$ \frac{d L_{PM}[t]}{dG_{i,j,k}} = \int_{\sim V_2[t]} \frac{N_r \alpha}{\Omega}
 
 $$ - \int_{\sim V_1[t]} \frac{N_r \alpha}{\Omega}(T^{*}_{-\alpha}\[\Gamma(i,j,k)\](\mathbf{r})) d\mathbf{r} $$
 
-In the volume integrals above, the notation $T^{*}_{-\alpha}\[\Gamma(i,j,k)\](\mathbf{r})$ indicates the volumetric exposure due to a single pixel indexed by $(i,j,k)$. For the purpose of this work, we model this using an integral projection (unfiltered inverse radon transform). Similarly, $T^{*}_{-\alpha}\[g\](\mathbf{r})$ denotes the volume exposure due to the full projection intensity at a particular iteration. The loss and gradient integrals are carried out using simple Riemann approximations with a particular gridsize that can be selected. 
+In the volume integrals above, the notation $T^{\*}_{-\alpha}\[\Gamma(i,j,k)\](\mathbf{r})$ indicates the volumetric exposure due to a single pixel indexed by $(i,j,k)$. For the purpose of this work, we model this using an integral projection (unfiltered inverse radon transform). Similarly, $T^{\*}_{-\alpha}\[g\](\mathbf{r})$ denotes the volume exposure due to the full projection intensity at a particular iteration. The loss and gradient integrals are carried out using simple Riemann approximations with a particular gridsize that can be selected. 
 
 The software implementation is through an optimization class CAL_mp. This uses multiprocessing for some of the functions in order to speed up repetitive calculations that are applied over multiple z-slices. 
 
