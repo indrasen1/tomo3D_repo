@@ -13,4 +13,4 @@ In computed axial lithography, a carefully calculated video is projected into a 
 
 The 3D dose distribution within the photosensitive resin $f(\mathbf{r}, z)$ arising from a set of projections $g(\rho, \theta, z)$ can be expressed using the integral projection operation as:
 
-$$ f(\mathbf{r}, z) = \frac{\alpha N_r}{\Omega} \int_{\theta = 0 to 2\pi} g(\rho = \mathbf{r}.\hat{\theta}, \theta, z) e^{-\alpha \mathbf{r}. \hat{theta}_\perp} d\theta $$
+$$ f(\mathbf{r}, z) = \frac{\alpha N_r}{\Omega} \int_{\theta = 0} ^{2\pi} g(\rho = \mathbf{r}.\hat{\theta}, \theta, z) e^{-\alpha \mathbf{r}. \hat{\theta}_\perp} d\theta $$
