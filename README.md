@@ -52,4 +52,5 @@ The software implementation is through an optimization class CAL_mp. This uses m
 
 The notebook shows an example for optimizing the projections of a model of the COVID-19 virus. Once the optimization is complete, a graph of loss vs epochs and videos of various quantities of interest are created. The projections are saved as a matlab file ready for driving projector output. 
 
+https://github.com/indrasen1/tomo3D_repo/assets/24784107/55c69b2d-0f98-42f2-bc37-05e9142dac71
 
