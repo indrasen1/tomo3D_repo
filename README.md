@@ -35,6 +35,10 @@ We impose an L1 penalty on each of the types of violations and obtain the loss a
 
 $$ L_{PM}[t] = \int_{\sim V_2[t]} \left( \frac{N_r\alpha}{\Omega}(T^*_{-\alpha}{g}(\mathbf{r})) - d_h \right) d\mathbf{r} $$ 
 
-$$ - \int_{\sim V_2[t]} \left( \frac{N_r\alpha}{\Omega}(T^*_{-\alpha}{g}(\mathbf{r})) - d_h \right) d\mathbf{r} $$
+$$ - \int_{\sim V_1[t]} \left( \frac{N_r\alpha}{\Omega}(T^*_{-\alpha}{g}(\mathbf{r})) - d_l \right) d\mathbf{r} $$
+
+We would like to obtain $\hat{g}$ that minimizes this loss function. In order to implement a derivative based method to obtain the minimum, we calculate the gradient of this loss function with respect to a particular projector pixels intensity:
+
+
 
 
