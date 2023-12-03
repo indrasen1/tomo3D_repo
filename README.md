@@ -29,10 +29,10 @@ where $d_h > d_l$. Our goal is to calculate $g(\rho, \theta, z)$ that lead to $f
 
 Figure: [A]: the hardware setup for 3D printing using a rotating resin container and projector, [B]: Schematic showing how different anges contribute to dose formation in 3D, [C]: the print target definition. Based on an input geometry, a target region, background and thin buffer region are created, [D]: Region definitions for computing the loss at any given iteration $t$, [E]: Gradient computation for the projector intensity values corresponding to a pixel $[i, j, k]$ in the projection space
 
-Several possible mathematical optimization approaches could exist to encourage the print conditions as expressed in terms of $R_1$ and $R_2$ above. We focus on the penalty minimization (PM) approach as described in Ref. [2] above. The manuscript also explains how the PM approach is equivalent to the iterative derivative-free optimization approach used in the first demonstration in Ref. [1]. In the PM approach, we seek to penalize any violations of the desired print target. Explicitly, regions where printing is desired but no printing occurs at optimization iteration $t$ are denoted as $\sim V_1[t]$. This is due to a lack of accumulated dose. Conversely, the region where printing is not desired but it occurs due to an excess of dose is denoted at $\sm V_2[t]$.
+Several possible mathematical optimization approaches could exist to encourage the print conditions as expressed in terms of $R_1$ and $R_2$ above. We focus on the penalty minimization (PM) approach as described in Ref. [2] above. The manuscript also explains how the PM approach is equivalent to the iterative derivative-free optimization approach used in the first demonstration in Ref. [1]. In the PM approach, we seek to penalize any violations of the desired print target. Explicitly, regions where printing is desired but no printing occurs at optimization iteration $t$ are denoted as $\sim V_1[t]$. This is due to a lack of accumulated dose. Conversely, the region where printing is not desired but it occurs due to an excess of dose is denoted at $\sim V_2[t]$.
 
 We impose an L1 penalty on each of the types of violations as follows:
 
-$$ \scriptL_{PM}[t] = \int_{\sym V_2[t]} (\frac{N_r\alpha}{\Omega}(T^*_{-\alpha}[g](\mathbf{r})))d\mathbf{r} $$
+$$ \scriptL_{PM}[t] = \int_{\sym V_2[t]} (\frac{N_r\alpha}{\Omega}(T^*_{-\alpha}{g}(\mathbf{r})))d\mathbf{r} $$
 
 
