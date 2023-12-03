@@ -57,8 +57,8 @@ The example below shows a set of outputs for the 3D printing of a prosthetic arm
 Please feel free to fork the repository and try it out with your own STL geometries. 
 
 Perfect reconstruction in the imaging problem (even in the case of sparse angular sampling) has been studied, for example:
-E. Candes, J. Romberg, T. Tao, "Robust uncertainty principles: exact signal reconstruction from highly incomplete frequency information"
-The 3D printing problem on the other hand relies on a non-linear thresholding and is positivity constrained in the projection space. On a positive note, target geometries are often sparse and have highly sparse gradients (unlike the imaging problem). It would be interesting to study the parameter space of perfect reconstruction in the 3D printing problem. 
+E. Candes, J. Romberg, T. Tao, "Robust uncertainty principles: exact signal reconstruction from highly incomplete frequency information".
+The 3D printing problem on the other hand relies on a non-linear thresholding and is positivity constrained in the projection space. On an optimistic note, target geometries are often sparse and have highly sparse gradients (unlike the imaging problem). It would be interesting to study the parameter space of perfect reconstruction in the 3D printing problem. 
 
 https://github.com/indrasen1/tomo3D_repo/assets/24784107/55c69b2d-0f98-42f2-bc37-05e9142dac71
 
