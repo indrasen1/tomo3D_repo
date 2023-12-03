@@ -45,6 +45,11 @@ $$ - \int_{\sim V_1[t]} \frac{N_r \alpha}{\Omega}(T^{*}_{-\alpha}\[\Gamma(i,j,k)
 
 In the volume integrals above, the term corresponding to notation $\Gamma(i,j,k)$ indicates the volumetric exposure due to a single pixel indexed by $(i,j,k)$. For the purpose of this work, we model this using an integral projection (unfiltered inverse radon transform). The loss and gradient integrals are carried out using simple Riemann approximations with a particular gridsize that can be selected. 
 
-The software implementation is through an optimization class CAL_mp. This uses multiprocessing for some of the functions in order to speed up repetitive calculations that are applied over multiple z-slices. 
+The software implementation is through an optimization class CAL_mp. This uses multiprocessing for some of functions in order to speed up repetitive calculations that are applied over multiple z-slices. An example use case is provided in the notebook CAL_geometryIterations.ipynb. In order to initialize an optimization, we require the following inputs (in chronological order):
+1. STL file of print target: placed user stlread_utils/STL_database
+2. The order of the loss function (keep it 1 for L1 loss), parameters dl and dh for the optimization, size of angle discretization for the radon transform (361 here), lateral resolution of voxel grid to represent geometry (300 here)
+3. Once the optimization object is initialized with these parameters using the CAL_mp class, we can set the parameters for the optimization. This uses the scipy.minimize class and related parameters (maxiter, ftol, disp, maxcor, maxls). The in-built LBFGS-B function is used to implement the optimization procedure.
+
+The notebook shows an example for optimizing the projections of a model of the COVID-19 virus. Once the optimization is complete, a graph of loss vs epochs and videos of various quantities of interest are created. The projections are saved as a matlab file ready for driving projector output. 
 
 
