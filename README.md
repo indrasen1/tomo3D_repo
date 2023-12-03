@@ -64,11 +64,15 @@ https://github.com/indrasen1/tomo3D_repo/assets/24784107/55c69b2d-0f98-42f2-bc37
 
 ## Acknowledgments
 
-This work was carried out at UC Berkeley in the lab of Prof. Hayden Taylor. Please consider using this technology with intention towards socially beneficial and conscious projects. The examples used in this notebook: a prosthetic hand and a medical model serve to illustrate some of the ways in which 3D printing can help our society. The models used here are under a creative commons license. 
+This work was carried out at the University of California Berkeley in the lab of Prof. Hayden Taylor. Please consider using this technology with intention towards socially beneficial and conscious projects. The examples used in this notebook: a prosthetic hand and a medical model serve to illustrate some of the ways in which 3D printing can help our society. The models used here are under a creative commons license. 
 
 ## Potential further steps
+
 [1] Incorporate a more detailed forward model using Abbe imaging physics
+
 [2] Discretization using the cylindrical symmetry of the problem or other non-uniform grids that could be beneficial
+
 [3] Faster optimization methods or parallelization using a GPU
+
 [4] Study if allowing for the printing of artifacts in $R_2$ improves the optimization result
 
