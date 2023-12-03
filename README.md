@@ -15,15 +15,11 @@ The 3D dose distribution within the photosensitive resin $f(\mathbf{r}, z)$ (Jou
 
 $$ f(\mathbf{r}, z) = \frac{\alpha N_r}{\Omega} \int_{\theta = 0} ^{2\pi} g(\rho = \mathbf{r}.\hat{\theta}, \theta, z) e^{-\alpha \mathbf{r}. \hat{\theta}_\perp} d\theta $$
 
-where $N_r$ denotes an integer number of rotations, $\alpha$ is the attenuation per unit length according to the Beer-Lambert law and $\Omega$ is the angular velocity of rotation of the resin container. 
+where $N_r$ denotes an integer number of rotations, $\alpha$ is the attenuation per unit length according to the Beer-Lambert law and $\Omega$ is the angular velocity of rotation of the resin container. Note that the expression excluding the pre-factor is the adjoint of the exponential radon tranform.
 
 We are interested in achieving solidification in a region $R_1$ and no solidification in a subset of its compliment with respect to the region volume (which we denote as $R_2$). The dose requirement may be expressed in a simplified form as:
 
-$$ R_1: f(\mathbf{r}, z) \ge d_h $$
-
-and 
-
-$$ R_2: f(\mathbf{r}, z) \le d_l $$ 
+$$ R_1: f(\mathbf{r}, z) \ge d_h, R_2: f(\mathbf{r}, z) \le d_l $$ 
 
 where $d_h > d_l$. Our goal is to calculate $g(\rho, \theta, z)$ that lead to $f(\mathbf{r}, z)$ that best satisfy the above conditions. 
 
