@@ -1,4 +1,14 @@
 # High fidelity tomographic 3D printing
+
+Files: 
+
+CAL_mp.py - python class for treating the 3D printing problem, starting from an STL file (CAL_mp uses multiprocessing unlike CAL.py)
+*.ipynb - notebooks showing specific examples
+githubRepo_schematic.png - schematic showing the setup and conventions used to describe the problem
+stlread_utils - folder containing STL file and temporary png slices
+hollies_hand... - Folder containing output files for one particular geometry (note: the *.mat file containing projector inputs was deleted due to size)
+tomoEnv.yml - environment file to run this project
+
 ## Iterative projection calculation: forward model
 
 This python implementation provides the optimization and projection generation framework used for volumetric additive manufacturing as described in the following publications:
