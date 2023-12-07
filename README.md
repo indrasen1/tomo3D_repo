@@ -18,11 +18,11 @@ tomoEnv.yml - environment file to run this project
 
 This python implementation provides the optimization and projection generation framework used for volumetric additive manufacturing as described in the following publications:
 
-[1] B. E. Kelly, I. Bhattacharya, H. Heidari, M. Shusteff, C. Spadaccini, H. K. Taylor, "Volumetric additive manufacturing via tomographic reconstruction", *Science*, 363 (6431), 1075-1079, 2019
+[1] [B. E. Kelly, I. Bhattacharya, H. Heidari, M. Shusteff, C. Spadaccini, H. K. Taylor, "Volumetric additive manufacturing via tomographic reconstruction", *Science*, 363 (6431), 1075-1079, 2019](https://www.science.org/doi/full/10.1126/science.aau7114)
 
-[2] I. Bhattacharya, J. Toombs, H. K. Taylor, "High fidelity volumetric additive manufacturing", *Additive Manufacturing*, 47, 102299, 2021
+[2] [I. Bhattacharya, J. Toombs, H. K. Taylor, "High fidelity volumetric additive manufacturing", *Additive Manufacturing*, 47, 102299, 2021](https://www.sciencedirect.com/science/article/pii/S2214860421004565)
 
-[3] I. Bhattacharya, B. Kelly, M. Shusteff, C. Spadaccini, H. K. Taylor, "Computed axial lithography: volumetric 3D printing of arbitrary geometries", SPIE COSI, 2018
+[3] [I. Bhattacharya, B. Kelly, M. Shusteff, C. Spadaccini, H. K. Taylor, "Computed axial lithography: volumetric 3D printing of arbitrary geometries", SPIE COSI, 2018](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10656/106560P/Computed-axial-lithography--volumetric-3D-printing-of-arbitrary-geometries/10.1117/12.2307780.short?SSO=1)
 
 In computed axial lithography, a carefully calculated video is projected into a steadily rotating photocurable resin. The video is synchronized to the rotation of the resin so that specific images are projected at each rotated angle. This is modeled as an integral projection of the image through the resin container (in the low attenuation case). The accumulation of dose leads to a two step printing process. The first step, which consumes most of the dose, is an induction phase where oxygen free radicals are neutralized by polymer free radicals. The second step is gelation where the excess polymer free radicals cross-link and solidify into a desired geometry. 
 
@@ -46,7 +46,7 @@ where $d_h > d_l$. Our goal is to calculate $g(\rho, \theta, z)$ that lead to $f
 
 Figure: [A]: the hardware setup for 3D printing using a rotating resin container and projector, [B]: Schematic showing how different anges contribute to dose formation in 3D, [C]: the print target definition. Based on an input geometry, a target region, background and thin buffer region are created, [D]: Region definitions for computing the loss at any given iteration $t$, [E]: Gradient computation for the projector intensity values corresponding to a pixel $[i, j, k]$ in the projection space
 
-Several possible mathematical optimization approaches could exist to encourage the print conditions as expressed in terms of $R_1$ and $R_2$ above. We focus on the penalty minimization (PM) approach as described in Ref. [2] above. The manuscript also explains how the PM approach is equivalent to the iterative derivative-free optimization approach used in the first demonstration in Ref. [1]. In the PM approach, we seek to penalize any violations of the desired print target. Explicitly, regions where printing is desired but no printing occurs at optimization iteration $t$ are denoted as $\sim V_1[t]$. This is due to a lack of accumulated dose. Conversely, the region where printing is not desired but it occurs due to an excess of dose is denoted at $\sim V_2[t]$. An example of the region definitions for a particular z-slice are shown in the schematic D above.
+Several possible mathematical optimization approaches could exist to encourage the print conditions as expressed in terms of $R_1$ and $R_2$ above. We focus on the penalty minimization (PM) approach as described in Ref. [2] above. The manuscript also explains how the PM approach is closely related to the iterative derivative-free optimization approach used in the first demonstration in Ref. [1]. In the PM approach, we seek to penalize any violations of the desired print target. Explicitly, regions where printing is desired but no printing occurs at optimization iteration $t$ are denoted as $\sim V_1[t]$. This is due to a lack of accumulated dose. Conversely, the region where printing is not desired but it occurs due to an excess of dose is denoted at $\sim V_2[t]$. An example of the region definitions for a particular z-slice are shown in the schematic D above.
 
 We impose an L1 penalty on each of the types of violations and obtain the loss at iteration $t$ as follows:
 
