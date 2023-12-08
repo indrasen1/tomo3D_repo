@@ -83,6 +83,10 @@ https://github.com/indrasen1/tomo3D_repo/assets/24784107/55c69b2d-0f98-42f2-bc37
 
 This work was carried out at the University of California Berkeley in the lab of Prof. Hayden Taylor. Please consider using this technology with intention towards socially beneficial and conscious projects. The examples used in this notebook: a prosthetic hand and a medical model, serve to illustrate some of the ways in which 3D printing can help our society. The models used here are under a creative commons license. 
 
+## License 
+
+[MIT Open Source License](https://opensource.org/license/mit/)
+
 ## Potential further steps
 
 [1] Incorporate a more detailed forward model using Abbe imaging physics
