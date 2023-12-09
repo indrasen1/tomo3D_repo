@@ -75,10 +75,10 @@ class CAL():
         
         stlName = os.path.splitext(stlName)[0]
         
-        stlDir = './stlread_utils/STL_database/'
+        stlDir = './stlread_utils/STL_files/'
         stlPath = stlDir + stlName + '.stl'
 
-        pngDir = './stlread_utils/PNG_database/'
+        pngDir = './stlread_utils/PNG_files/'
         pngDirPath = pngDir + stlName
         
         pngPath = pngDirPath + '/' + stlName + '.png'
